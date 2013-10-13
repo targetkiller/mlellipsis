@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.demo{margin: 30px auto;width: 600px;text-align: center;line-height: 1.5;font-size: 16px;}
+		.example{width: 300px;background-color: #888;text-align: left;margin: 0 auto;}
+	</style>
+</head>
+<body>
+	<div class="demo">
+		使用方法：
+		<p>var row = 2;//需要省略的行数</br>
+			dom.mlellipsis(row);</p>
+		<input type="text" id="row" placeholder="输入要省略的行数" />
+		<button onclick="action()">确定</button>
+		<div class="example">法恩莎发生地方啊是仿盛大发生的地方撒旦法艾丝凡阿斯蒂芬阿斯蒂芬阿斯蒂芬阿斯蒂芬艾丝凡阿斯蒂芬阿斯蒂芬阿斯顿发生发生的发生的发大水暗杀阿斯蒂芬艾丝凡萨芬撒发生发生发生发生的发生的发生范德萨</div>
+	</div>
+</body>
+	<script type="text/javascript" src="mlellipsis.min.js"></script>
+	<script type="text/javascript">
+		function action(){
+			var row = document.getElementById("row").value;
+			document.querySelectorAll("div")[1].mlellipsis(row);
+		}
+	</script>
+</html>
