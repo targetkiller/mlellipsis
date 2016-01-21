@@ -75,7 +75,7 @@ Element.prototype.mlellipsis=function(row){
 		//减去末尾文字
 		while(dheight<this.clientHeight){
 			str = this.getText();
-			this.setText(str.replace(/(\s)*([a-zA-Z0-9]+|\W)(\.\.\.)?$/,"..."));
+			this.setText(str.replace(/(\s)*([a-zA-Z0-9_]+|\W)(\.\.\.)?$/,"..."));
 		}
 	}
 }
